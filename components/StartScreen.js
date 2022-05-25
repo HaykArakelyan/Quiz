@@ -5,16 +5,11 @@ import styles from "../styles/startscreen.module.scss";
 import Option from './Option';
 
 
-export default function StartScreen({ allCountries }) {
+export default function StartScreen({ allCountries, number }) {
     const [index, setIndex] = useState(0);
     const [randomNumber, setRandomNumber] = useState(0);
     const [isVisiable, setIsVisiable] = useState(false);
     const [options, setOptions] = useState(["B.", "C.", "D."])
-
-
-    const getRandomNumber = () => {
-        return Math.ceil(Math.random() * 1000) % allCountries.length;
-    }
 
     return (
         <>
@@ -41,11 +36,10 @@ export default function StartScreen({ allCountries }) {
                                 answer={allCountries[index].name.official}
                             />
                             {options.map((item) => {
-                                getRandomNumber()
                                 return (
                                     <Option
                                         key={item}
-                                        title={allCountries[getRandomNumber()].name.official}
+                                        title={allCountries[number].name.official}
                                         optionLetter={item}
                                         allCountries={allCountries}
                                         answer={allCountries[index].name.official}
