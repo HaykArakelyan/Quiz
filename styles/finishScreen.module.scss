@@ -1,0 +1,61 @@
+.container {
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container h1 {
+    margin: 0 0 15px 0;
+    color: white;
+}
+
+.window {
+    background-color: white;
+    height: 500px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    height: 170px;
+}
+
+.heading {
+    color: #1D355D;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.subHeading {
+    color: #1D355D;
+}
+
+.maxScore {
+    color: #7ACF98;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.againButtonContainer {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px 0;
+    border: 2px solid #1D355D;
+}
+
+.againButtonContainer:hover{
+    cursor: pointer;
+}
+
+.againButtonText {
+    color: #1D355D;
+}
+
