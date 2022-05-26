@@ -1,0 +1,21 @@
+.container{
+    border: 2px solid #6066D0B2;
+    border-radius: 15px;
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+}
+
+.container:hover{
+    background-color: #F9A826;
+    cursor: pointer;
+}
+
+.container p {
+    margin: 0;
+    color: #6066D0CC;
+}
+
+.container p:first-child{
+    margin-right: 20px;
+}
